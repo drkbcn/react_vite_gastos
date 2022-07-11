@@ -32,7 +32,7 @@ const NuevoPresupuesto = ({
               name='presupuesto' 
               placeholder='Ingresa tu presupuesto' 
               value={presupuesto}
-              onChange={e => setPresupuesto(e.target.value)}
+              onChange={e => setPresupuesto(Number(e.target.value))}
             />
           </div>
           <input className='boton' type='submit' value='Añadir' />
